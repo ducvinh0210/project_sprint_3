@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function validateAge() {
+            age = document.getElementById("age").value;
+            if (age > 18) {
+                alert("bạn đã đủ tuổi ")
+            }else {
+                alert(" bạn chưa đủ tuổi")
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+Age:
+<input type="text" id="age">
+<input type="button" value="submit" onclick="validateAge()">
+
+
+</body>
+</html>

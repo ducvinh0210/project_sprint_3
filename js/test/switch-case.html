@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function validateform() {
+            var name = document.myform.name.value;
+            var password = document.myform.password.value;
+            if (name == null || name == "") {
+                alert("Name cants be blank");
+                return false;
+            } else if (password.length < 6) {
+                alert("passworld must be at leats 6 characters long")
+                return false;
+            }
+        }
+
+    </script>
+</head>
+<body>
+<form name="myform" method="post" action="wellcome1.php" onsubmit=" return validateform()">
+    Name: <input type="text" name="name">
+    Password: <input type="password" name="password">
+    <input type="submit" value="register">
+
+
+</form>
+
+
+</body>
+</html>
